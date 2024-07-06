@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <>
-      <Sidebar sidebarToggle={sidebarToggle}/>
+      <Sidebar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle}/>
       <NavBar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle}/>
       <Routes>
         <Route path='/dashboard' element={<Dashboard/>}/>

@@ -10,7 +10,7 @@ const NavBar = ({sidebarToggle, setSidebarToggle}: SetSidebarToggle) => {
     return (
         <div className="border-b border-b-2 shadow p-4 bg-slate-100">
             <div className=' relative container mx-auto flex justify-end items-center'>
-                <div className={`${sidebarToggle ? '' : 'ml-24'} cursor-pointer absolute left-0 font-medium`}>
+                <div className={`${sidebarToggle ? 'hidden' : 'block'} cursor-pointer absolute left-0 font-medium`}>
                     <FaBars onClick={() => setSidebarToggle(!sidebarToggle)}/>
                 </div>
                 <nav className="font-medium">
